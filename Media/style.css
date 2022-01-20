@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.title {
+  color: blueviolet;
+}
+.element {
+  width: 25%;
+  height: 300px;
+  border: 2px solid red;
+  background: gray;
+}
+.block {
+  display: flex;
+}
+
+@media (max-width: 992px) {
+  .title {
+    color: blue;
+  }
+  .block {
+    flex-wrap: wrap;
+  }
+
+  .element {
+    font-size: 20px;
+    width: 50%;
+  }
+}
+
+@media (max-width: 770px) {
+  .title {
+    color: brown;
+  }
+}
+
+@media (max-width: 600px) {
+    .element {
+        width: 100%;
+        height: max-content;
+    }
+    .title{
+        font-size: 20px;
+    }
+}
